@@ -1,0 +1,19 @@
+def water_pressure(depth):
+    """
+    Returns the water pressure at a given depth in meters.
+
+    :param depth: Depth in meters.
+    :return: Pressure in Pascals (Pa).
+    """
+    # Constants
+    density_of_water = 1000  # in kg/m³ (density of fresh water)
+    gravity = 9.81  # in m/s² (acceleration due to gravity)
+
+    # Calculate pressure
+    pressure = density_of_water * gravity * depth
+    
+    return pressure
+
+# Example usage:
+depth = 10  # Depth in meters
+print(f"Water pressure at {depth} meters depth: {water_pressure(depth)} Pascals")  # Output: 98100.0 Pascals
